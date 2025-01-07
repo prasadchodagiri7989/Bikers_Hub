@@ -7,7 +7,7 @@ import { FaInstagram } from "react-icons/fa";
 import { IoLocationOutline } from "react-icons/io5";
 import { CiMail } from "react-icons/ci";
 import { LuPhoneCall } from "react-icons/lu";
-
+import logoImg from "../assets/footer-logo.png"
 
 
 
@@ -31,13 +31,13 @@ function Footer() {
         </div>
         <div className='footer-box-2'>
             <div className='footer-image-container'>
-                <img className='footer-image' src="/assets/footer-logo.png" alt="Footer Logo" />
+                <img className='footer-image' src={logoImg} alt="Footer Logo" />
                 <p>Follow Us</p>
-                <div className='footer-icons'>
-                <FiFacebook />
-                <RiTelegram2Line />
-                <FiTwitter />
-                <FaInstagram />
+                <div className='footer-icons flex justify-between'>
+                    <FiFacebook />
+                    <RiTelegram2Line />
+                    <FiTwitter />
+                    <FaInstagram />
                 </div>
             </div>
             <div className='footer-sub-containers'>

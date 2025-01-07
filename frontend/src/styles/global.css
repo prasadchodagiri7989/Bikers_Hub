@@ -1,6 +1,13 @@
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .footer{
     background-color: black;
     color: white;
+    margin: 0px;
 }
 
 .footer-box-1{
@@ -227,3 +234,544 @@
     margin-right: 10px;
     padding: 10px;
   }
+
+  /*Hero Section*/
+  .hero-container {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 50px;
+    color: white;
+    height: 500px;
+  }
+  
+  .hero-section-highlight{
+    background-color: #F2A727;
+  }
+
+  .hero-container h1{
+    font-size: 50px;
+  }
+
+  .hero-container button{
+    background-color: transparent;
+    border-radius: 5px;
+    color: white;
+    border: 1px solid #F2A727;
+    padding: 10px;
+    font-size: 25px;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  /*Categories section*/
+
+  .categories-main-container{
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .categories-heading{
+    text-align: center;
+    font-size: 40px;
+  }
+
+  .categories-sub-container{
+    margin: 20px;
+  }
+  .categories-sub-container p{
+    font-size: 20px;
+  }
+
+  /*product card 2 css */
+
+  .product-card {
+    border: 1px solid #ddd;
+    border-radius: 0px;
+    overflow: hidden;
+    width: 250px;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 16px;
+    background-color: #fff;
+    position: relative;
+  }
+  
+  .product-tag {
+    background-color: #ff4500;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px 10px;
+    border-top-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+  }
+  
+  .image-container {
+    position: relative;
+  }
+  
+  .product-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .details-container {
+    padding: 10px;
+  }
+  
+  .color-container {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 8px;
+  }
+  
+  .color-dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+  }
+  
+  .product-title {
+    font-size: 16px;
+    margin: 8px 0;
+    color: #333;
+  }
+  
+  .price-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+  }
+  
+  .new-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+  }
+  
+  .old-price {
+    font-size: 14px;
+    color: #888;
+    text-decoration: line-through;
+  }
+  
+  .product-discount {
+    background-color: #ff4500;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 4px;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 8px;
+  }
+  
+  .rating-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .star {
+    color: #ff9500;
+    font-size: 16px;
+  }
+  
+  .review-count {
+    font-size: 12px;
+    color: #888;
+  }
+  
+/* best seller css */
+
+.best-seller{
+    background-color: #000;
+    padding: 50px;
+}
+
+.best-seller h1{
+    color: #fff;
+    text-align: center;
+}
+
+.best-seller-product{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* New Arrival Css */
+
+.new-arrivals-box {
+  width: 296px;
+  height: 361px;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto Mono', monospace;
+  margin: 20px;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.new-arrivals-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #7f7b7b;
+  padding: 16px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.new-arrivals-title {
+  margin: 0;
+  font-size: 19px;
+  font-weight: 600;
+  color: #FFB800; 
+}
+
+.new-arrivals-subtext {
+  margin: 4px 0 8px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.buy-now-button {
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #000;
+  background-color: #ffd700; 
+  border: none;
+  border-radius: 16px; 
+  cursor: pointer;
+}
+
+.buy-now-button:hover {
+  background-color: #fcd34d; 
+}
+
+/* shop by brands */
+
+.shop-by-main-container{
+  text-align: center;
+  background-color: #7f7b7b;
+}
+
+.shop-by-sub-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.shop-by-brand-container{
+  height: 120px;
+  width: 120px;
+  margin: 40px;
+  border-radius: 50%;
+  background-color: #333;
+}
+
+/* new arrival con */
+.arrival-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* product listing */
+
+.filter-container{
+  overflow-y: scroll;
+  background-color: #DEAD68;
+  width: 20vw;
+}
+.product-list-section{
+  overflow-y: scroll;
+  height: 100vh;
+  width: 80vw;
+}
+
+.checkbox-container {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  border-bottom: 1px solid #000;
+}
+.checkbox-container h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.checkbox-container label {
+  display: block;
+  margin: 5px 0;
+  font-size: 1rem;
+}
+.checkbox-container input {
+  margin-right: 10px;
+}
+
+/* header */
+.top-strip_bg{
+  background: #8B1414;
+}
+
+.headerWrapper .top-strip{
+  height:auto;
+  padding: 4px 0px;
+  color:white;
+  font-weight: 600;
+  word-spacing: 7px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.headerWrapper .header{
+  width:100%;
+  height:auto;
+  padding:10px 0px;
+  
+}
+.header .container{
+align-items: center;
+justify-content: center;
+width:100%;
+}
+.logoWrapper img{
+  width:100%;
+  height:auto;
+}
+.part2{
+  width:80%;
+  height:60px;
+  border-radius:7px !important;
+  position: relative;
+}
+.part2 .headSearch{
+  background: #e5e5e5;
+  border: 1px solid #00000000;
+  border-radius: 5px;
+  height: 50px;
+  position: relative;
+  width:70%;
+  margin-left:20px;
+  position: relative;
+}
+.headSearch input{
+  width:100%;
+  height:100%;
+  border-radius: 5px;
+  border:none;
+}
+.headSearch button{
+  position:absolute;
+  right:0px;
+  width:70px;
+  height:48px;
+  background-color: #F2A727;
+}
+.headSearch .circle{
+  font-size:25px;
+  color:rgb(0, 0, 0);
+}
+header .part3{
+  width:250px;
+  height:50px;
+  margin-left:50px;
+  position:relative;
+  justify-content: space-between;
+}
+.part3 .usercircle{
+  min-width:45px !important;
+  min-height:45px !important;
+  width:40px;
+  height:40px;
+  border-radius:100%;
+  border:1px solid black;
+  font-size: 18px;
+  color:black;
+}
+.part3 .cartTab{
+  align-items: center;
+  justify-content: space-around;
+}
+.cartTab .price{
+  margin-right:25px;
+  font-weight: 900;
+  font-size: 20px;
+  color:red;
+}
+.part3 .cartcircle{
+  min-width:45px !important;
+  min-height:45px !important;
+  width:40px;
+  height:40px;
+  border-radius:100%;
+  border:1px solid black;
+  font-size: 18px;
+  color:black;
+}
+
+:root {
+  --gold: #fde047;
+}
+
+/* Additional CSS rules for styling your React components */
+
+@layer base {
+  button {
+    @apply border border-black rounded-xl px-5 py-1;
+  }
+}
+
+.react-rater-star.is-active-half:before {
+  color: var(--gold) !important;
+}
+
+.react-rater-star.is-active {
+  color: var(--gold) !important;
+}
+
+
+Button{
+  width:150px;
+  height:50px;
+  border-radius:7px;
+  justify-content: center;
+  text-align:left;
+  border-radius:7px;
+}
+.areadrpdwn .info{
+  text-align: left;
+}
+.info .label{
+  font-size: 10px !important;
+  color:rgba(0,0,0,0.7);
+
+}
+.info .name{
+  font-size: 14px !important;
+  color:black;
+  font-weight: 700;;
+}
+
+.auth-container {
+  background: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+h2 {
+  margin: 0 0 20px;
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+button {
+  padding: 12px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+p {
+  margin-top: 10px;
+  font-size: 14px;
+  text-align: center;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .container {
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+}
